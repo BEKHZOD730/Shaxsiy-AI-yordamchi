@@ -1,0 +1,471 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-cyber: 'Orbitron', monospace, sans-serif;
+    --font-tech: 'Rajdhani', sans-serif;
+    --font-hud: 'Chakra Petch', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #020308;
+    color: #00f2ff;
+  }
+}
+
+.font-cyber {
+  font-family: var(--font-cyber);
+}
+
+.font-tech {
+  font-family: var(--font-tech);
+}
+
+.font-hud {
+  font-family: var(--font-hud);
+}
+
+/* Immersive UI Neon Glows & Shadows */
+.neon-glow-cyan {
+  box-shadow: 0 0 15px rgba(0, 242, 255, 0.4), 0 0 30px rgba(0, 242, 255, 0.2), inset 0 0 15px rgba(0, 242, 255, 0.08);
+}
+
+.neon-glow-magenta {
+  box-shadow: 0 0 15px rgba(188, 19, 254, 0.4), 0 0 30px rgba(188, 19, 254, 0.2), inset 0 0 15px rgba(188, 19, 254, 0.08);
+}
+
+.neon-glow-green {
+  box-shadow: 0 0 15px rgba(57, 255, 20, 0.35), 0 0 30px rgba(57, 255, 20, 0.15), inset 0 0 10px rgba(57, 255, 20, 0.1);
+}
+
+.neon-glow-purple {
+  box-shadow: 0 0 15px rgba(188, 19, 254, 0.35), 0 0 30px rgba(188, 19, 254, 0.15), inset 0 0 10px rgba(188, 19, 254, 0.1);
+}
+
+.neon-glow-rose {
+  box-shadow: 0 0 15px rgba(244, 63, 94, 0.4), 0 0 30px rgba(244, 63, 94, 0.2), inset 0 0 10px rgba(244, 63, 94, 0.15);
+}
+
+.neon-border-cyan {
+  border-color: rgba(0, 242, 255, 0.6);
+  box-shadow: 0 0 10px rgba(0, 242, 255, 0.3);
+}
+
+.neon-text-cyan {
+  text-shadow: 0 0 8px rgba(0, 242, 255, 0.8), 0 0 20px rgba(0, 242, 255, 0.5);
+}
+
+.neon-text-magenta {
+  text-shadow: 0 0 8px rgba(188, 19, 254, 0.8), 0 0 20px rgba(188, 19, 254, 0.5);
+}
+
+.neon-text-green {
+  text-shadow: 0 0 8px rgba(57, 255, 20, 0.7), 0 0 20px rgba(57, 255, 20, 0.4);
+}
+
+/* Immersive Deep Radial Space Background */
+.immersive-space-bg {
+  background: radial-gradient(circle at 50% 50%, #1a2c5e 0%, transparent 70%);
+}
+
+.immersive-dot-grid {
+  background-image: radial-gradient(#00f2ff 0.5px, transparent 0.5px);
+  background-size: 12px 12px;
+}
+
+/* Tech grid background */
+.tech-grid-bg {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 242, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 242, 255, 0.04) 1px, transparent 1px);
+}
+
+/* ==========================================================================
+   LIGHT THEME SUITE (STARIA TITANIUM SILVER HORIZON)
+   ========================================================================== */
+.theme-light {
+  background-color: #f0f4f8;
+  color: #0f172a;
+}
+
+.theme-light .immersive-space-bg {
+  background: radial-gradient(circle at 50% 30%, #e0f2fe 0%, #f1f5f9 75%);
+}
+
+.theme-light .immersive-dot-grid {
+  background-image: radial-gradient(#0284c7 0.75px, transparent 0.75px);
+  background-size: 14px 14px;
+}
+
+.theme-light .tech-grid-bg {
+  background-image: 
+    linear-gradient(to right, rgba(2, 132, 199, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(2, 132, 199, 0.06) 1px, transparent 1px);
+}
+
+.theme-light .staria-horizon-lightbar {
+  background: linear-gradient(
+    90deg, 
+    rgba(2, 132, 199, 0) 0%, 
+    rgba(2, 132, 199, 0.7) 15%, 
+    rgba(14, 165, 233, 1) 50%, 
+    rgba(2, 132, 199, 0.7) 85%, 
+    rgba(2, 132, 199, 0) 100%
+  );
+  box-shadow: 
+    0 0 10px rgba(2, 132, 199, 0.6),
+    0 0 20px rgba(14, 165, 233, 0.4);
+}
+
+.theme-light .staria-cockpit-panel {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(2, 132, 199, 0.22);
+  box-shadow: 
+    0 10px 35px rgba(15, 23, 42, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+  color: #0f172a;
+}
+
+.theme-light .staria-cockpit-panel:hover {
+  border-color: rgba(2, 132, 199, 0.45);
+  box-shadow: 
+    0 15px 40px rgba(15, 23, 42, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+.theme-light .staria-pill {
+  background: rgba(241, 245, 249, 0.95);
+  border: 1px solid rgba(2, 132, 199, 0.25);
+  color: #0f172a;
+}
+
+.theme-light .staria-pill:hover {
+  border-color: rgba(2, 132, 199, 0.7);
+  box-shadow: 0 0 12px rgba(2, 132, 199, 0.2);
+}
+
+.theme-light .staria-parametric-mesh {
+  background-image: 
+    radial-gradient(rgba(2, 132, 199, 0.15) 1px, transparent 1px),
+    radial-gradient(rgba(147, 51, 234, 0.1) 1px, transparent 1px);
+}
+
+.theme-light .text-white {
+  color: #0f172a !important;
+}
+
+.theme-light .text-slate-100 {
+  color: #1e293b !important;
+}
+
+.theme-light .text-slate-200 {
+  color: #334155 !important;
+}
+
+.theme-light .text-slate-300 {
+  color: #475569 !important;
+}
+
+.theme-light .text-slate-400 {
+  color: #64748b !important;
+}
+
+.theme-light .bg-black\/60,
+.theme-light .bg-black\/70,
+.theme-light .bg-black\/50,
+.theme-light .bg-black\/80 {
+  background-color: rgba(241, 245, 249, 0.9) !important;
+  color: #0f172a;
+}
+
+.theme-light .bg-\[\#020512\]\/90,
+.theme-light .bg-\[\#040612\],
+.theme-light .bg-\[\#080b1a\],
+.theme-light .bg-\[\#030712\],
+.theme-light .bg-\[\#020308\],
+.theme-light .bg-\[\#060c20\],
+.theme-light .bg-\[\#060d24\],
+.theme-light .bg-\[\#02050f\] {
+  background-color: #ffffff !important;
+  color: #0f172a;
+}
+
+.theme-light .border-cyan-900\/60,
+.theme-light .border-cyan-900\/70,
+.theme-light .border-cyan-900\/80,
+.theme-light .border-cyan-950,
+.theme-light .border-cyan-900 {
+  border-color: rgba(2, 132, 199, 0.25) !important;
+}
+
+.theme-light .bg-cyan-950\/80,
+.theme-light .bg-cyan-950\/60,
+.theme-light .bg-cyan-950\/50,
+.theme-light .bg-cyan-950\/40,
+.theme-light .bg-cyan-950\/30,
+.theme-light .bg-cyan-950 {
+  background-color: rgba(224, 242, 254, 0.85) !important;
+  color: #0369a1 !important;
+}
+
+.theme-light .bg-purple-950\/40,
+.theme-light .bg-purple-950\/60,
+.theme-light .bg-purple-950\/80,
+.theme-light .bg-purple-950 {
+  background-color: rgba(243, 232, 255, 0.85) !important;
+  color: #6b21a8 !important;
+}
+
+.theme-light .bg-emerald-950\/80,
+.theme-light .bg-emerald-950\/60,
+.theme-light .bg-emerald-950\/40,
+.theme-light .bg-emerald-950 {
+  background-color: rgba(209, 250, 229, 0.85) !important;
+  color: #065f46 !important;
+}
+
+.theme-light .bg-amber-950\/80,
+.theme-light .bg-amber-950\/60,
+.theme-light .bg-amber-950\/40,
+.theme-light .bg-amber-950 {
+  background-color: rgba(254, 243, 199, 0.85) !important;
+  color: #92400e !important;
+}
+
+.theme-light .bg-rose-950\/80,
+.theme-light .bg-rose-950\/60,
+.theme-light .bg-rose-950\/40,
+.theme-light .bg-rose-950 {
+  background-color: rgba(255, 228, 230, 0.85) !important;
+  color: #9f1239 !important;
+}
+
+.theme-light input,
+.theme-light select,
+.theme-light textarea {
+  color: #0f172a !important;
+  background-color: #ffffff !important;
+  border-color: rgba(2, 132, 199, 0.3) !important;
+}
+
+.theme-light input::placeholder,
+.theme-light textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+.theme-light .bg-cyan-400 {
+  background-color: #0284c7 !important;
+  color: #ffffff !important;
+}
+
+.theme-light #add-task-modal,
+.theme-light #voice-alert-hud-modal,
+.theme-light .bg-\[\#040612\] {
+  background-color: #ffffff !important;
+  border-color: rgba(2, 132, 199, 0.35) !important;
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.18), 0 0 30px rgba(2, 132, 199, 0.1) !important;
+  color: #0f172a !important;
+}
+
+.theme-light .text-cyan-300,
+.theme-light .text-cyan-200 {
+  color: #0284c7 !important;
+}
+
+.theme-light .text-cyan-400 {
+  color: #0369a1 !important;
+}
+
+.theme-light .text-purple-300,
+.theme-light .text-purple-200 {
+  color: #7e22ce !important;
+}
+
+.theme-light .text-purple-400 {
+  color: #6b21a8 !important;
+}
+
+.theme-light .text-magenta-400,
+.theme-light .text-pink-400,
+.theme-light .text-pink-300 {
+  color: #be185d !important;
+}
+
+.theme-light .text-emerald-300,
+.theme-light .text-emerald-400 {
+  color: #047857 !important;
+}
+
+.theme-light .text-amber-300,
+.theme-light .text-amber-400 {
+  color: #b45309 !important;
+}
+
+.theme-light .text-rose-300,
+.theme-light .text-rose-400 {
+  color: #be123c !important;
+}
+
+.theme-light header {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-bottom: 1px solid rgba(2, 132, 199, 0.2) !important;
+}
+
+/* ==========================================================================
+   HYUNDAI STARIA & ALIEN STARSHIP MONOLITH AESTHETIC SUITE
+   ========================================================================== */
+
+/* Seamless Horizontal Horizon LED Lightbar (Staria Signature Robo-Face) */
+.staria-horizon-lightbar {
+  position: relative;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(
+    90deg, 
+    rgba(0, 242, 255, 0) 0%, 
+    rgba(0, 242, 255, 0.6) 15%, 
+    rgba(255, 255, 255, 0.95) 50%, 
+    rgba(0, 242, 255, 0.6) 85%, 
+    rgba(0, 242, 255, 0) 100%
+  );
+  box-shadow: 
+    0 0 10px rgba(0, 242, 255, 0.8),
+    0 0 25px rgba(0, 242, 255, 0.5),
+    0 0 45px rgba(0, 242, 255, 0.3);
+}
+
+.staria-horizon-lightbar::after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 30%;
+  right: 30%;
+  height: 5px;
+  background: #ffffff;
+  filter: blur(2px);
+  border-radius: 9999px;
+  animation: staria-sweep 4s ease-in-out infinite alternate;
+}
+
+@keyframes staria-sweep {
+  0% { transform: scaleX(0.85); opacity: 0.8; }
+  100% { transform: scaleX(1.15); opacity: 1; filter: blur(3px); }
+}
+
+/* Staria Panoramic Cockpit Glass Panel */
+.staria-cockpit-panel {
+  background: radial-gradient(140% 120% at 50% -10%, rgba(13, 27, 62, 0.65) 0%, rgba(3, 6, 17, 0.94) 70%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 242, 255, 0.18);
+  box-shadow: 
+    0 20px 50px rgba(0, 0, 0, 0.8),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    inset 0 0 30px rgba(0, 242, 255, 0.03);
+}
+
+.staria-cockpit-panel:hover {
+  border-color: rgba(0, 242, 255, 0.35);
+  box-shadow: 
+    0 25px 60px rgba(0, 0, 0, 0.9),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25),
+    inset 0 0 40px rgba(0, 242, 255, 0.06);
+}
+
+/* Parametric Mesh Matrix (Inspired by Staria front grille) */
+.staria-parametric-mesh {
+  background-image: 
+    radial-gradient(rgba(0, 242, 255, 0.12) 1px, transparent 1px),
+    radial-gradient(rgba(188, 19, 254, 0.08) 1px, transparent 1px);
+  background-size: 16px 16px;
+  background-position: 0 0, 8px 8px;
+}
+
+/* Aerodynamic Capsule Pill Control */
+.staria-pill {
+  border-radius: 9999px;
+  background: rgba(8, 14, 34, 0.85);
+  border: 1px solid rgba(0, 242, 255, 0.25);
+  backdrop-filter: blur(12px);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.staria-pill:hover {
+  border-color: rgba(0, 242, 255, 0.7);
+  box-shadow: 0 0 15px rgba(0, 242, 255, 0.35);
+}
+
+/* Staria Parametric Pixel Lamp Accent (Rear Vertical Lamp Style) */
+.staria-pixel-accent {
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 242, 255, 0.8) 0px,
+    rgba(0, 242, 255, 0.8) 4px,
+    transparent 4px,
+    transparent 8px
+  );
+}
+
+/* Cyber Hexagon / HUD Corner Cuts */
+.hud-corner {
+  clip-path: polygon(
+    0 8px, 8px 0, 
+    calc(100% - 8px) 0, 100% 8px, 
+    100% calc(100% - 8px), calc(100% - 8px) 100%, 
+    8px 100%, 0 calc(100% - 8px)
+  );
+}
+
+.hud-corner-lg {
+  clip-path: polygon(
+    0 16px, 16px 0, 
+    calc(100% - 16px) 0, 100% 16px, 
+    100% calc(100% - 16px), calc(100% - 16px) 100%, 
+    16px 100%, 0 calc(100% - 16px)
+  );
+}
+
+/* Custom Scrollbar for immersive cockpit */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020308;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0e3a53;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00f2ff;
+  box-shadow: 0 0 10px #00f2ff;
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.02); }
+}
+
+@keyframes radar-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s infinite ease-in-out;
+}
+
+.animate-radar {
+  animation: radar-spin 8s linear infinite;
+}
+
+

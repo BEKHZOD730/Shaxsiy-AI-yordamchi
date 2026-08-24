@@ -1,0 +1,6 @@
+{
+  "name": "XENO Chrono: Alien Rejalashtiruvchi",
+  "description": "Hyundai Staria va o'zga sayyoraliklar estetikasidagi futuristik aerodinamik rejalashtiruvchi, harakatlanuvchi yonuvchi raketa bilan PDF tez o'qish kitobxoni, AI leksika va kodlar matritsasi hamda qat'iy ovozli eslatmalar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
